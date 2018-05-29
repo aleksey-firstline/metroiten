@@ -1,0 +1,19 @@
+﻿@model Metroiten.ViewModel.HomeIndexViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>@Model.Message</h2>
+
+<table>
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <tr>
+            <td>@restaurant</td>
+            <td><a asp-action="Detail" asp-route-id="@restaurant.Id">Detail</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-action="Create">Create</a>
