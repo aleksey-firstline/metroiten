@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Metroiten.Data;
 using Metroiten.Models;
+using Microsoft.EntityFrameworkCore;
 using SQLitePCL;
 
 namespace Metroiten.Services
@@ -25,6 +26,14 @@ namespace Metroiten.Services
         {
             _context.Restaurants.Add(restaurant);
             _context.SaveChanges();
+            return restaurant;
+        }
+
+        public Restaurant Update(Restaurant restaurant)
+        {
+            _context.Attach(restaurant).State = EntityState.Modified;
+            _context.SaveChanges();
+
             return restaurant;
         }
     }

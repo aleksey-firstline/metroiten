@@ -1,0 +1,10 @@
+﻿@model Metroiten.Models.Restaurant
+
+<section>
+
+    <h3>@Model.Name</h3>
+    <a asp-action="Detail" asp-route-id="@Model.Id">Detail</a>
+    <a asp-page="/Restaurants/Edit" asp-route-id="@Model.Id">Edit</a>
+
+</section>
+

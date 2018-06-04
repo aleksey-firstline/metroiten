@@ -1,19 +1,22 @@
 ﻿@model Metroiten.ViewModel.HomeIndexViewModel
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Home";
 }
 
 <h2>@Model.Message</h2>
 
-<table>
-    @foreach (var restaurant in Model.Restaurants)
-    {
-        <tr>
-            <td>@restaurant</td>
-            <td><a asp-action="Detail" asp-route-id="@restaurant.Id">Detail</a></td>
-        </tr>
-    }
-</table>
+@foreach (var restauran in Model.Restaurants)
+{
+    @Html.Partial("_Summary", restauran)
+}
 
-<a asp-action="Create">Create</a>
+<br/>
+<div>
+    <a asp-action="Create">Create</a>
+</div>
+
+
+@section footer {
+    @Model.Message
+}

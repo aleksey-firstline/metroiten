@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Metroiten.Models;
 
 namespace Metroiten.Services
@@ -11,5 +8,6 @@ namespace Metroiten.Services
         IEnumerable<Restaurant> GetAllRestaurants();
         Restaurant GetById(int id);
         Restaurant Add(Restaurant restaurant);
+        Restaurant Update(Restaurant restaurant);
     }
 }
