@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Metroiten.Data;
 using Metroiten.Services;
+using Metroiten.Web.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -41,6 +42,9 @@ namespace Metroiten
             }
 
             app.UseStaticFiles();
+
+            app.UseNodeModules(env.ContentRootPath);
+
             app.UseMvc(ConfigureRoutes);
 
             app.Run(async (context) =>

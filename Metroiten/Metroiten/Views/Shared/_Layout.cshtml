@@ -3,18 +3,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="container">
+        <div>
+            @RenderBody()
+        </div>
+        <div>
+            @DateTime.Now.Year
+        </div>
+        <footer>
+            @RenderSection("footer", required: false)
+            <vc:greeter></vc:greeter>
+        </footer>
     </div>
-<div>
-    @DateTime.Now.Year
-</div>
-<footer>
-    @RenderSection("footer", required: false)
-    <vc:greeter></vc:greeter>
-</footer>
+    @RenderSection("scripts", false)
 </body>
 </html>

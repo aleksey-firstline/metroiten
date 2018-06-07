@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metroiten.Web", "Metroiten\Metroiten.Web.csproj", "{123065DB-ACD7-45CE-B873-823E994DFE61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metroiten.Admin", "Metroiten.Admin\Metroiten.Admin.csproj", "{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metroiten.Admin", "Metroiten.Admin\Metroiten.Admin.csproj", "{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metroiten.Data", "Metroiten.Data\Metroiten.Data.csproj", "{48875B84-AD02-44FE-B890-E13925AA9BA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

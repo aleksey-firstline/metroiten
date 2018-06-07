@@ -1,9 +1,16 @@
 ﻿@using Metroiten.Models
 @model Restaurant
+@section scripts {
+    <script src="~/ClientApp/dist/main.js"></script>
+    <script src="~/ClientApp/dist/polyfills.js"></script>
+    <script src="~/ClientApp/dist/styles.js"></script>
+    <script src="~/ClientApp/dist/runtime.js"></script>
+    <script src="~/ClientApp/dist/vendor.js"></script>
+}
+
 @{
     ViewBag.Title = Model.Name;
 }
-
 <h2>@Model.Name</h2>
 
 <a asp-action="Index">Home</a>
