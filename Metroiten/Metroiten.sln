@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metroiten.Web", "Metroiten\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metroiten.Admin", "Metroiten.Admin\Metroiten.Admin.csproj", "{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metroiten.Data", "Metroiten.Data\Metroiten.Data.csproj", "{48875B84-AD02-44FE-B890-E13925AA9BA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metroiten.Data", "Metroiten.Data\Metroiten.Data.csproj", "{9C7641AF-1E14-4745-8133-6DCF9218D599}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B3A2FC-1119-4699-B940-8AE9F6D64FEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48875B84-AD02-44FE-B890-E13925AA9BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7641AF-1E14-4745-8133-6DCF9218D599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7641AF-1E14-4745-8133-6DCF9218D599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7641AF-1E14-4745-8133-6DCF9218D599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7641AF-1E14-4745-8133-6DCF9218D599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

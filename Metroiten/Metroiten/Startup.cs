@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Metroiten.Data;
+﻿using Metroiten.Data.Data;
 using Metroiten.Services;
 using Metroiten.Web.Middleware;
 using Microsoft.AspNetCore.Builder;

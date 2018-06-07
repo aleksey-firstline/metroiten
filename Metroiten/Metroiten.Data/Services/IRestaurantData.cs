@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Metroiten.Models;
+using Metroiten.Data.Models;
 
 namespace Metroiten.Services
 {

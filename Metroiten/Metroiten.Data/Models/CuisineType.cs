@@ -1,4 +1,4 @@
-﻿namespace Metroiten.Models
+﻿namespace Metroiten.Data.Models
 {
     public enum CuisineType
     {

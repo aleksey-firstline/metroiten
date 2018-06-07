@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Metroiten.Models
+namespace Metroiten.Data.Models
 {
     public class Restaurant
     {

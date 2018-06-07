@@ -1,7 +1,7 @@
-﻿using Metroiten.Models;
+﻿using Metroiten.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Metroiten.Data
+namespace Metroiten.Data.Data
 {
     public class MetroitenDbContext : DbContext
     {
@@ -10,5 +10,7 @@ namespace Metroiten.Data
         }
 
         public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Currency> Currencies { get; set; }
+        public DbSet<Dish> Dishes { get; set; }
     }
 }

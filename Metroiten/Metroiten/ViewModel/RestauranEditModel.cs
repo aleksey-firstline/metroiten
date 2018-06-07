@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Metroiten.Models;
+using Metroiten.Data.Models;
 
 namespace Metroiten.ViewModel
 {

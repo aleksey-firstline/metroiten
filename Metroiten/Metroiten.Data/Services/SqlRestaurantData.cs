@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Metroiten.Data;
-using Metroiten.Models;
+using Metroiten.Data.Data;
+using Metroiten.Data.Models;
 using Microsoft.EntityFrameworkCore;
-using SQLitePCL;
 
 namespace Metroiten.Services
 {

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Metroiten.Models;
+using Metroiten.Data.Models;
 using Metroiten.Services;
 using Metroiten.ViewModel;
 using Microsoft.AspNetCore.Mvc;
