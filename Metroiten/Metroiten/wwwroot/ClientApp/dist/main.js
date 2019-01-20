@@ -462,7 +462,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Repos\metroiten\Metroiten\Metroiten\ClientApp\main.ts */"./ClientApp/main.ts");
+module.exports = __webpack_require__(/*! C:\Repository\metroiten\Metroiten\Metroiten\ClientApp\main.ts */"./ClientApp/main.ts");
 
 
 /***/ })

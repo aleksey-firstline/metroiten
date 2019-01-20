@@ -1,4 +1,5 @@
 ﻿using Metroiten.Data.Data;
+using Metroiten.Data.Services;
 using Metroiten.Services;
 using Metroiten.Web.Middleware;
 using Microsoft.AspNetCore.Builder;
@@ -23,10 +24,10 @@ namespace Metroiten
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddSingleton<IGreeting, Greeting>();
             services.AddDbContext<MetroitenDbContext>(x => x.UseSqlServer(_configuration.GetConnectionString("Metroiten")));
-            services.AddScoped<IRestaurantData, SqlRestaurantData>();
-            services.AddMvc();
+            services.AddScoped<IRestaurantData, FakeRestouranData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
