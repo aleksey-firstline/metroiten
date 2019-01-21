@@ -9,6 +9,7 @@ namespace Metroiten.Data.Models
         [Required, MaxLength(5)]
         public string Name { get; set; }
         public CuisineType Cuisine { get; set; }
+        public string Description { get; set; }
 
         public override string ToString()
         {

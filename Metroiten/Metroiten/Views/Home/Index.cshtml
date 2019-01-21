@@ -5,25 +5,27 @@
 
 <app-root></app-root>
 
-@{
-    /*foreach (var restauran in Model.Restaurants)
-    {
-        @Html.Partial("_Summary", restauran)
-    }*/
-}
-<br />
-<div>
-    <a asp-action="Create">Create</a>
+<div class="row" style="margin-top: 10px">
+    @{
+        foreach (var restauran in Model.Restaurants)
+        {
+            @Html.Partial("_Summary", restauran)
+        }
+    }
 </div>
+    <br />
+    <div>
+        <a asp-action="Create">Create</a>
+    </div>
 
-@section scripts {
-    <script src="~/ClientApp/dist/main.js"></script>
-    <script src="~/ClientApp/dist/polyfills.js"></script>
-    <script src="~/ClientApp/dist/styles.js"></script>
-    <script src="~/ClientApp/dist/runtime.js"></script>
-    <script src="~/ClientApp/dist/vendor.js"></script>
-}
+    @section scripts {
+        <script src="~/ClientApp/dist/main.js"></script>
+        <script src="~/ClientApp/dist/polyfills.js"></script>
+        <script src="~/ClientApp/dist/styles.js"></script>
+        <script src="~/ClientApp/dist/runtime.js"></script>
+        <script src="~/ClientApp/dist/vendor.js"></script>
+    }
 
-@section footer {
-    @Model.Message
-}
+    @section footer {
+        @Model.Message
+    }

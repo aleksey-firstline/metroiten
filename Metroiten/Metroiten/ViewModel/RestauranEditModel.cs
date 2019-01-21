@@ -7,6 +7,7 @@ namespace Metroiten.ViewModel
     {
         [Required, MaxLength(5)]
         public string Name { get; set; }
+        public string Description { get; set; }
         public CuisineType Cuisine { get; set; }
     }
 }

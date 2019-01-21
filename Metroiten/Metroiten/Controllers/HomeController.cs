@@ -53,7 +53,8 @@ namespace Metroiten.Controllers
                 var restauran = new Restaurant
                 {
                     Name = editModel.Name,
-                    Cuisine = editModel.Cuisine
+                    Cuisine = editModel.Cuisine,
+                    Description = editModel.Description
                 };
 
                 _restaurantData.Add(restauran);

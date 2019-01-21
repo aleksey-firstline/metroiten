@@ -5,18 +5,23 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<app-root></app-root>
 
 <form method="post">
-    <div>
+    <div class="form-group">
         <label asp-for="Name"></label>
-        <input asp-for="Name" />
+        <input class="form-control" asp-for="Name" />
         <span asp-validation-for="Name"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label asp-for="Cuisine"></label>
-        <select asp-for="Cuisine" asp-items="@Html.GetEnumSelectList<CuisineType>()"></select>
+        <select class="form-control" asp-for="Cuisine" asp-items="@Html.GetEnumSelectList<CuisineType>()"></select>
         <span asp-validation-for="Cuisine"></span>
     </div>
-    <input type="submit" name="save" value="Save"/>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input class="form-control" asp-for="Description" />
+        <span asp-validation-for="Description"></span>
+    </div>
+    <input type="submit" class="btn btn-primary" name="save" value="Save" />
 </form>
